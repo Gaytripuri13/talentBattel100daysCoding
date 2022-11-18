@@ -1,0 +1,10 @@
+//Get an input character from the user and give the ASCII value of the given input as the output.
+
+import java.util.*;
+public class Main{
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        int ascii = ch;
+       
