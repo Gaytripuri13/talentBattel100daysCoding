@@ -1,0 +1,24 @@
+//Get a number from user for which you need to fin the factorial, then calculate the factorial and 
+give it as the output.
+import java .util.*;
+class Main{
+ 
+ 
+ 
+ public static int Factorial (int a)
+ { 
+ if(a!=0){
+ return a* Factorial(a-1);
+ }
+ else{
+ return 1;
+ }
+ }
+ public static void main(String args[]){
+ Scanner sc=new Scanner (System.in);
+ int a=sc.nextInt();
+ 
+ int fact=Factorial(a);
+ System.out.println(fact);
+ }
+}
