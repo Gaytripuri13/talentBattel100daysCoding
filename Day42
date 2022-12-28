@@ -1,0 +1,30 @@
+//Write Program to check if two arrays are the same or not
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+int []a = new int[10];
+int []b = new int[10];
+System.out.println("enter the size of first array");
+ int n = sc.nextInt();
+ System.out.println("enter the size of second array");
+ int m = sc.nextInt();
+ System.out.println("enter the element of first array");
+ for(int i = 0; i<n; i++)
+ {
+ a[i]=sc.nextInt()
+} System.out.println("enter the element of second array");
+ for(int i = 0; i<m; i++)
+ {
+ b[i]=sc.nextInt();
+ }
+ 
+ 
+ if (a == b )
+ System.out.println("same");
+ else
+ System.out.println("different");
+ 
+ }
+}
