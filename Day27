@@ -1,0 +1,11 @@
+//For the given input number calculate the double of it without using arithmetic operator.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	    int doublen =n<<1;
+		System.out.println("double: "+ doublen);
+	}
+}
