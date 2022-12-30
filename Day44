@@ -1,0 +1,28 @@
+
+//count odd and even elemnts of an array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("enter the size of an array");
+	    int n = sc.nextInt();
+		int odd = 0;
+		int even = 0;
+		int []a= new int[20];
+		System.out.println("enter the element of an array");
+		for (int i=0;i<n;i++){
+		    a[i] =sc.nextInt();
+		}
+		
+		for(int i = 0; i<n ; i++){
+		    
+		    if(a[i]%2==0)
+		    even++;
+		    else
+		    odd++;
+		}
+		System.out.println("even elements are: "+ even);
+		System.out.println("odd elements are: "+ odd);
+	}
+}
