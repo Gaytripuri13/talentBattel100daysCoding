@@ -1,0 +1,30 @@
+//convert upper to lower and lower to upper
+import java.util.*;
+
+public class Main
+{
+    public static void convertS(StringBuffer s)
+    {
+        int len = s.length();
+		for (int i = 0; i < len; i++) {
+            Character c = s.charAt(i);
+            if (Character.isLowerCase(c))
+                s.replace(i, i + 1,
+                            Character.toUpperCase(c) + "");
+            else
+                s.replace(i, i + 1,
+                            Character.toLowerCase(c) + "");
+        }
+        }
+        
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("enter the string");
+		StringBuffer s =new StringBuffer();
+	
+		=s.append(sc.nextLine());
+		convertS(s);
+		
+		System.out.println(s);
+	}
+}
