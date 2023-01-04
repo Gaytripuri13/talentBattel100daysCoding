@@ -1,0 +1,31 @@
+//Get an array as input from the user and then remove all the duplicate elements in that array.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("enter the size o f an array: ");
+		int n = sc.nextInt();
+		int [] a = new int[n];
+		int [] b = new int[n];
+		int [] c = new int[n];
+		for(int i = 0;i<n; i++){
+		    a[i] = sc.nextInt();
+		}
+		for(int i = 0; i<n-1; i++){
+		    for(int j=i+1;j<n;j++){
+             if(a[i]==a[j])
+            b[i] = a[j];
+            else
+            c[i] =a[i];
+           
+		    }
+		    System.out.print(c[i]+" ");
+		    
+		}
+		
+		
+
+	}
+}
+
